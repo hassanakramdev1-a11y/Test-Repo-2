@@ -6,6 +6,7 @@ Small Python starter with a greeting helper.
 
 ```bash
 python -m src
+python -m src Ada
 ```
 
 ## Test
