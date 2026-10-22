@@ -12,7 +12,7 @@ def test_greet_returns_hello_name() -> None:
 
 
 def test_greet_strips_whitespace() -> None:
-    assert greet("  Ada  ") == "Hello, Ada!"
+    assert greet("  Adam  ") == "Hello, Adam!"
 
 
 def test_greet_rejects_empty_name() -> None:
@@ -22,8 +22,8 @@ def test_greet_rejects_empty_name() -> None:
 
 def test_main_uses_cli_name() -> None:
     with patch("sys.stdout", new_callable=StringIO) as stdout:
-        main(["Ada"])
-    assert stdout.getvalue() == "Hello, Ada!\n"
+        main(["Adam"])
+    assert stdout.getvalue() == "Hello, Adam!\n"
 
 
 def test_main_defaults_to_hassan() -> None:
